@@ -19,13 +19,13 @@ class CategoryController extends Controller
         return view('categories.index')->with('categories',Category::all());
     }
 
-    
+    // commentaire test
     public function create()
     {
         return view('categories.create');
     }
 
-    
+    // commentaire test 2
     public function store(CategoryRequest $request)
     {
         Category::create($request->all());
