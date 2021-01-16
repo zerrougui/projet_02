@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+//test
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('categories','\App\Http\Controllers\CategoryController');
 Route::get('/posts/trashed','\App\Http\Controllers\PostController@trashedPosts')->name('posts.trashed');
