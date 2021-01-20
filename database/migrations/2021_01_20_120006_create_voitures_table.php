@@ -16,7 +16,7 @@ class CreateVoituresTable extends Migration
         Schema::create('voitures', function (Blueprint $table) {
             $table->id();
             $table->string('model');
-            $table->string('micanician_id');
+            $table->integer('micanician_id');
             $table->timestamps();
         });
     }
